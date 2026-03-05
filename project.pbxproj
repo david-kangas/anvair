@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51299B292F421AC4009B3D39 /* AccuGains Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 51299B282F421AC4009B3D39 /* AccuGains Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		51739C1A2F576F6A007B342C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51739C192F576F6A007B342C /* WidgetKit.framework */; };
+		51739C1C2F576F6A007B342C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51739C1B2F576F6A007B342C /* SwiftUI.framework */; };
+		51739C2B2F576F6B007B342C /* AccuGainsComplicationExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 51739C172F576F6A007B342C /* AccuGainsComplicationExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51299B2A2F421AC4009B3D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51299B1C2F421AC4009B3D39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51299B272F421AC4009B3D39;
+			remoteInfo = "AccuGains Watch App";
+		};
+		51739C292F576F6B007B342C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51299B1C2F421AC4009B3D39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51739C162F576F6A007B342C;
+			remoteInfo = AccuGainsComplicationExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51299B382F421AC4009B3D39 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				51299B292F421AC4009B3D39 /* AccuGains Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51739C2C2F576F6B007B342C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				51739C2B2F576F6B007B342C /* AccuGainsComplicationExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		51299B222F421AC4009B3D39 /* AccuGains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccuGains.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51299B282F421AC4009B3D39 /* AccuGains Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AccuGains Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51739C172F576F6A007B342C /* AccuGainsComplicationExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AccuGainsComplicationExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		51739C192F576F6A007B342C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		51739C1B2F576F6A007B342C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		51739C312F577001007B342C /* AccuGainsComplicationExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AccuGainsComplicationExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		51739C2F2F576F6B007B342C /* Exceptions for "AccuGainsComplication" folder in "AccuGainsComplicationExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 51739C162F576F6A007B342C /* AccuGainsComplicationExtension */;
+		};
+		51739C362F57782D007B342C /* Exceptions for "AccuGains Watch App" folder in "AccuGainsComplicationExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SharedTimerState.swift,
+			);
+			target = 51739C162F576F6A007B342C /* AccuGainsComplicationExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		51299B2C2F421AC4009B3D39 /* AccuGains Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				51739C362F57782D007B342C /* Exceptions for "AccuGains Watch App" folder in "AccuGainsComplicationExtension" target */,
+			);
+			path = "AccuGains Watch App";
+			sourceTree = "<group>";
+		};
+		51739C1D2F576F6A007B342C /* AccuGainsComplication */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				51739C2F2F576F6B007B342C /* Exceptions for "AccuGainsComplication" folder in "AccuGainsComplicationExtension" target */,
+			);
+			path = AccuGainsComplication;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51299B252F421AC4009B3D39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51739C142F576F6A007B342C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51739C1C2F576F6A007B342C /* SwiftUI.framework in Frameworks */,
+				51739C1A2F576F6A007B342C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51299B1B2F421AC4009B3D39 = {
+			isa = PBXGroup;
+			children = (
+				51739C312F577001007B342C /* AccuGainsComplicationExtension.entitlements */,
+				51299B2C2F421AC4009B3D39 /* AccuGains Watch App */,
+				51739C1D2F576F6A007B342C /* AccuGainsComplication */,
+				51739C182F576F6A007B342C /* Frameworks */,
+				51299B232F421AC4009B3D39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		51299B232F421AC4009B3D39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51299B222F421AC4009B3D39 /* AccuGains.app */,
+				51299B282F421AC4009B3D39 /* AccuGains Watch App.app */,
+				51739C172F576F6A007B342C /* AccuGainsComplicationExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51739C182F576F6A007B342C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51739C192F576F6A007B342C /* WidgetKit.framework */,
+				51739C1B2F576F6A007B342C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51299B212F421AC4009B3D39 /* AccuGains */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51299B392F421AC4009B3D39 /* Build configuration list for PBXNativeTarget "AccuGains" */;
+			buildPhases = (
+				51299B202F421AC4009B3D39 /* Resources */,
+				51299B382F421AC4009B3D39 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51299B2B2F421AC4009B3D39 /* PBXTargetDependency */,
+			);
+			name = AccuGains;
+			packageProductDependencies = (
+			);
+			productName = AccuGains;
+			productReference = 51299B222F421AC4009B3D39 /* AccuGains.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		51299B272F421AC4009B3D39 /* AccuGains Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51299B352F421AC4009B3D39 /* Build configuration list for PBXNativeTarget "AccuGains Watch App" */;
+			buildPhases = (
+				51299B242F421AC4009B3D39 /* Sources */,
+				51299B252F421AC4009B3D39 /* Frameworks */,
+				51299B262F421AC4009B3D39 /* Resources */,
+				51739C2C2F576F6B007B342C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51739C2A2F576F6B007B342C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				51299B2C2F421AC4009B3D39 /* AccuGains Watch App */,
+			);
+			name = "AccuGains Watch App";
+			packageProductDependencies = (
+			);
+			productName = "AccuGains Watch App";
+			productReference = 51299B282F421AC4009B3D39 /* AccuGains Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		51739C162F576F6A007B342C /* AccuGainsComplicationExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51739C302F576F6B007B342C /* Build configuration list for PBXNativeTarget "AccuGainsComplicationExtension" */;
+			buildPhases = (
+				51739C132F576F6A007B342C /* Sources */,
+				51739C142F576F6A007B342C /* Frameworks */,
+				51739C152F576F6A007B342C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				51739C1D2F576F6A007B342C /* AccuGainsComplication */,
+			);
+			name = AccuGainsComplicationExtension;
+			packageProductDependencies = (
+			);
+			productName = AccuGainsComplicationExtension;
+			productReference = 51739C172F576F6A007B342C /* AccuGainsComplicationExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51299B1C2F421AC4009B3D39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					51299B212F421AC4009B3D39 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					51299B272F421AC4009B3D39 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					51739C162F576F6A007B342C = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = 51299B1F2F421AC4009B3D39 /* Build configuration list for PBXProject "AccuGains" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 51299B1B2F421AC4009B3D39;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 51299B232F421AC4009B3D39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51299B212F421AC4009B3D39 /* AccuGains */,
+				51299B272F421AC4009B3D39 /* AccuGains Watch App */,
+				51739C162F576F6A007B342C /* AccuGainsComplicationExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51299B202F421AC4009B3D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51299B262F421AC4009B3D39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51739C152F576F6A007B342C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51299B242F421AC4009B3D39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51739C132F576F6A007B342C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		51299B2B2F421AC4009B3D39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51299B272F421AC4009B3D39 /* AccuGains Watch App */;
+			targetProxy = 51299B2A2F421AC4009B3D39 /* PBXContainerItemProxy */;
+		};
+		51739C2A2F576F6B007B342C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51739C162F576F6A007B342C /* AccuGainsComplicationExtension */;
+			targetProxy = 51739C292F576F6B007B342C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		51299B332F421AC4009B3D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		51299B342F421AC4009B3D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		51299B362F421AC4009B3D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AccuGains Watch App/AccuGains Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C4ZK5D797;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AccuGains;
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "AccuGains starts a brief workout session during rest intervals so haptic alerts work reliably with the screen off.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.accugains.watchapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		51299B372F421AC4009B3D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "AccuGains Watch App/AccuGains Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C4ZK5D797;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AccuGains;
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "AccuGains starts a brief workout session during rest intervals so haptic alerts work reliably with the screen off.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.accugains.watchapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+		51299B3A2F421AC4009B3D39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C4ZK5D797;
+				INFOPLIST_KEY_CFBundleDisplayName = AccuGains;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.accugains.watchapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		51299B3B2F421AC4009B3D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C4ZK5D797;
+				INFOPLIST_KEY_CFBundleDisplayName = AccuGains;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.accugains.watchapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		51739C2D2F576F6B007B342C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = AccuGainsComplicationExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C4ZK5D797;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AccuGainsComplication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AccuGainsComplication;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.accugains.watchapp.AccuGainsComplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Debug;
+		};
+		51739C2E2F576F6B007B342C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = AccuGainsComplicationExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8C4ZK5D797;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AccuGainsComplication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AccuGainsComplication;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.accugains.watchapp.AccuGainsComplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51299B1F2F421AC4009B3D39 /* Build configuration list for PBXProject "AccuGains" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51299B332F421AC4009B3D39 /* Debug */,
+				51299B342F421AC4009B3D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51299B352F421AC4009B3D39 /* Build configuration list for PBXNativeTarget "AccuGains Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51299B362F421AC4009B3D39 /* Debug */,
+				51299B372F421AC4009B3D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51299B392F421AC4009B3D39 /* Build configuration list for PBXNativeTarget "AccuGains" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51299B3A2F421AC4009B3D39 /* Debug */,
+				51299B3B2F421AC4009B3D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51739C302F576F6B007B342C /* Build configuration list for PBXNativeTarget "AccuGainsComplicationExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51739C2D2F576F6B007B342C /* Debug */,
+				51739C2E2F576F6B007B342C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 51299B1C2F421AC4009B3D39 /* Project object */;
+}
