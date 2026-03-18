@@ -20,3 +20,8 @@ Core Ideas
 • Eyes-free interaction
 • Minimal interface states
 • Haptic-first communication
+
+Copyright 2026 David Kangas
+
+This repository is shared for portfolio and documentation purposes.  
+All rights reserved.
