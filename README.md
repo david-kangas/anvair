@@ -1,27 +1,45 @@
-# anvair
-Docs and code for anvair app
-ANVAIR
+# ANVAIR
 
 Minimal Apple Watch timer designed to keep strength athletes on schedule between sets without interrupting the flow of training.
 
-Overview
+---
 
-ANVAIR is a focused watchOS application that manages rest intervals during strength training using a minimal interaction model and haptic feedback.
+## Overview
 
-Case Study
+ANVAIR is a focused watchOS application built around a single job: managing rest intervals during strength training.
 
-The full design and development case study is available here:
+The product uses a minimal interaction model and haptic feedback to guide athletes back to their next set without requiring constant visual attention.
 
-/case-study/anvair-case-study.pdf
+---
 
-Core Ideas
+## Case Study
 
-• One job done well
-• Eyes-free interaction
-• Minimal interface states
-• Haptic-first communication
+The full product design and development case study is available here:
 
-Copyright 2026 David Kangas
+[ANVAIR Case Study PDF](ANVAIR%20Case%20Study.pdf)
 
-This repository is shared for portfolio and documentation purposes.  
-All rights reserved.
+---
+
+## Product Principles
+
+• One job done well  
+• Eyes-free interaction  
+• Minimal interface states  
+• Haptic-first communication  
+
+---
+
+## Author
+
+David Kangas  
+Product and Operations  
+Bradenton, Florida
+
+---
+
+## Copyright
+
+Copyright 2026 David Kangas. All rights reserved.
+
+This repository is shared for documentation and portfolio purposes.  
+No license is granted for reuse, modification, or redistribution of the source code or associated materials without explicit permission.
