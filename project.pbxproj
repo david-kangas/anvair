@@ -68,6 +68,7 @@
 		51739C2F2F576F6B007B342C /* Exceptions for "AccuGainsComplication" folder in "AccuGainsComplicationExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				AccuGainsComplicationControl.swift,
 				Info.plist,
 			);
 			target = 51739C162F576F6A007B342C /* AccuGainsComplicationExtension */;
@@ -434,13 +435,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "AccuGains Watch App/AccuGains Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8C4ZK5D797;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = AccuGains;
+				INFOPLIST_KEY_CFBundleDisplayName = ANVAIR;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "ANVAIR uses Health data to support Apple Watch workout session timing.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "ANVAIR uses Health data to support Apple Watch workout session timing.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "AccuGains starts a brief workout session during rest intervals so haptic alerts work reliably with the screen off.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -449,7 +453,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.accugains.watchapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.anvair.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -469,13 +473,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "AccuGains Watch App/AccuGains Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8C4ZK5D797;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = AccuGains;
+				INFOPLIST_KEY_CFBundleDisplayName = ANVAIR;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "ANVAIR uses Health data to support Apple Watch workout session timing.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "ANVAIR uses Health data to support Apple Watch workout session timing.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "AccuGains starts a brief workout session during rest intervals so haptic alerts work reliably with the screen off.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -484,7 +491,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.accugains.watchapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.anvair.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -506,9 +513,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8C4ZK5D797;
-				INFOPLIST_KEY_CFBundleDisplayName = AccuGains;
+				INFOPLIST_KEY_CFBundleDisplayName = ANVAIR;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.accugains.watchapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.anvair;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -523,9 +530,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8C4ZK5D797;
-				INFOPLIST_KEY_CFBundleDisplayName = AccuGains;
+				INFOPLIST_KEY_CFBundleDisplayName = ANVAIR;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.accugains.watchapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.anvair;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -546,7 +553,7 @@
 				DEVELOPMENT_TEAM = 8C4ZK5D797;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AccuGainsComplication/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AccuGainsComplication;
+				INFOPLIST_KEY_CFBundleDisplayName = ANVAIR;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -555,7 +562,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.accugains.watchapp.AccuGainsComplication;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.anvair.watch.complicationx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -580,7 +587,7 @@
 				DEVELOPMENT_TEAM = 8C4ZK5D797;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AccuGainsComplication/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AccuGainsComplication;
+				INFOPLIST_KEY_CFBundleDisplayName = ANVAIR;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -589,7 +596,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.accugains.watchapp.AccuGainsComplication;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidkangas.anvair.watch.complicationx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
