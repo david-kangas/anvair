@@ -21,13 +21,32 @@
     margin-top: 10px;
     margin-bottom: 50px;
 }
+        .intro {
+    max-width: 700px;
+    margin: 40px auto 0 auto;
+    font-size: 22px;
+    color: #d0d0d0;
+    text-align: center;
+    line-height: 1.5;
+}
         body {
-            margin: 0;
-            background: #05070d;
-            color: #ffffff;
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.6;
-        }
+    margin: 0;
+    background:
+        radial-gradient(
+            circle at top,
+            #1d406d 0%,
+            #10233f 35%,
+            #07111d 70%,
+            #05070d 100%
+        );
+    color: #ffffff;
+    font-family:
+        "SF Pro Display",
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+    line-height: 1.6;
+}
 
         .container {
             max-width: 900px;
@@ -52,12 +71,21 @@
     font-weight: 500;
     margin-bottom: 50px;
 }
+        .divider {
+    width: 450px;
+    max-width: 80%;
+    height: 1px;
+    background: rgba(77,163,255,0.25);
+    margin: 55px auto;
+}
 
         .subtitle {
-            font-size: 28px;
-            color: #cccccc;
-            margin-bottom: 60px;
-        }
+    font-size: 34px;
+    font-weight: 400;
+    color: #d7d7d7;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
 
         .section {
             margin-top: 60px;
@@ -99,22 +127,24 @@
          alt="ANVAIR"
          class="launch-logo">
 
-    <a href="#"
-       class="store-link">
-        <img src="images/app-store-badge.svg"
-             alt="Download on the App Store"
-             class="app-store-badge">
+   
     </a>
 
     <div class="subtitle">
         A haptic strength training timer for Apple Watch.
     </div>
+         <a href="#"
+       class="store-link">
+        <img src="images/app-store-badge.svg"
+             alt="Download on the App Store"
+             class="app-store-badge">
+    </a>
     </div>
-    <p>
-        ANVAIR guides your rest periods through purposeful haptic cues,
-        allowing you to stay focused on your workout instead of your watch.
-    </p>
-
+   <p class="intro">
+    ANVAIR guides your rest periods through purposeful haptic cues,
+    allowing you to stay focused on your workout instead of your watch.
+</p>
+<div class="divider"></div>
     <div class="section">
         <h2>Features</h2>
 
