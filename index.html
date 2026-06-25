@@ -15,6 +15,12 @@
     height: auto;
     margin-bottom: 35px;
 }
+        .app-store-badge {
+    width: 180px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
         body {
             margin: 0;
             background: #05070d;
@@ -28,6 +34,9 @@
             margin: auto;
             padding: 40px 30px 60px 30px;
         }
+        .hero {
+    text-align: center;
+}
 
         h1 {
     font-size: 84px;
@@ -84,12 +93,23 @@
 <body>
 
 <div class="container">
-<img src="images/launch-logo.png" alt="ANVAIR — You Focus. We Function." class="launch-logo">
+    <div class="hero">
+
+    <img src="images/launch-logo.png"
+         alt="ANVAIR"
+         class="launch-logo">
+
+    <a href="#"
+       class="store-link">
+        <img src="images/app-store-badge.svg"
+             alt="Download on the App Store"
+             class="app-store-badge">
+    </a>
 
     <div class="subtitle">
         A haptic strength training timer for Apple Watch.
     </div>
-
+    </div>
     <p>
         ANVAIR guides your rest periods through purposeful haptic cues,
         allowing you to stay focused on your workout instead of your watch.
