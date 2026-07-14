@@ -117,7 +117,42 @@
         a:hover {
             text-decoration: underline;
         }
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
 
+.video-card {
+    display: block;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid rgba(77,163,255,.25);
+    background: rgba(255,255,255,.03);
+    transition: .2s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(77,163,255,.55);
+    background: rgba(255,255,255,.05);
+    text-decoration: none;
+}
+
+.video-card h3 {
+    margin: 0 0 12px 0;
+    color: white;
+}
+
+.video-card p {
+    margin: 0 0 18px 0;
+}
+
+.video-link {
+    color: #4da3ff;
+    font-weight: 700;
+}
         .footer {
     margin-top: 80px;
     padding-top: 40px;
@@ -214,10 +249,61 @@
     </p>
 
     <p class="closing-line">
-        Just your workout.
+        You focus. We function.
     </p>
 </div>
-   
+   <div class="section">
+    <h2>The Story Behind ANVAIR</h2>
+
+    <p>
+        ANVAIR didn't begin as a business idea. It began as a tool I needed
+        during my own recovery and strength training. 
+        
+        If you'd like to learn more about the app and the thinking behind it, 
+        these videos are a good place to start.
+    </p>
+
+    <div class="video-grid">
+
+        <a class="video-card"
+           href="https://youtu.be/FfpO8KBfKdU"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <h3>App Trailer</h3>
+
+            <p>
+                A quick introduction to ANVAIR and its minimalist design philosophy.
+            </p>
+
+            <span class="video-link">
+                Watch the trailer →
+            </span>
+
+        </a>
+
+        <a class="video-card"
+           href="https://youtu.be/i-VzzIhPJjQ"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <h3>NotebookLM: Experiment #1</h3>
+
+            <p>
+                What began as an attempt to create promotional material became an
+                unscripted conversation about recovery, software design, and why
+                ANVAIR exists.
+            </p>
+
+            <span class="video-link">
+                Watch the experiment →
+            </span>
+
+        </a>
+
+    </div>
+
+</div>
   <div class="footer">
 
     <div class="divider"></div>
