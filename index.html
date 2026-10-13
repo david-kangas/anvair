@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QNJS590BGW"></script>
+<!-- Google Analytics Consent Mode v2 -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-QNJS590BGW');
+  gtag('consent', 'default', {
+    'analytics_storage': 'denied',
+    'ad_storage': 'denied',
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied'
+  });
+
+  gtag('js', new Date());
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -317,15 +322,17 @@
 
     <div class="divider"></div>
 
-    <div class="footer-links">
-        <a href="support.html">Support</a>
-        |
-        <a href="privacy.html">Privacy Policy</a>
-        |
+ <div class="footer-links">
+    <a href="support.html">Support</a>
+    |
+    <a href="privacy.html">Privacy Policy</a>
+    |
+    <a href="#" id="analytics-preferences">Analytics Preferences</a>
+    |
     <a href="ANVAIR%20Case%20Study%20V1.0.pdf">
-    Learn more about the app
-</a>
-    </div>
+        Learn more about the app
+    </a>
+</div>
 
     <div class="email">
         <a href="mailto:support@anvair.com">
@@ -340,6 +347,90 @@
 </div>
 
 </div>
+<!-- Analytics consent notice -->
+<div id="analytics-consent" style="
+  display:none;
+  position:fixed;
+  left:20px;
+  right:20px;
+  bottom:20px;
+  max-width:600px;
+  margin:auto;
+  padding:18px 20px;
+  background:#111827;
+  color:#ffffff;
+  border-radius:12px;
+  box-shadow:0 4px 20px rgba(0,0,0,.3);
+  font-family:Arial,sans-serif;
+  font-size:14px;
+  line-height:1.5;
+  z-index:9999;
+">
+  <div style="margin-bottom:14px;">
+    ANVAIR uses optional Google Analytics to understand how visitors use this site.
+    You can accept or decline analytics.
+  </div>
 
+  <button id="accept-analytics" style="
+    padding:9px 14px;
+    margin-right:8px;
+    border:0;
+    border-radius:6px;
+    cursor:pointer;
+  ">Accept analytics</button>
+
+  <button id="decline-analytics" style="
+    padding:9px 14px;
+    border:1px solid #ffffff;
+    border-radius:6px;
+    background:transparent;
+    color:#ffffff;
+    cursor:pointer;
+  ">Decline</button>
+</div>
+
+<script>
+  const GA_ID = 'G-QNJS590BGW';
+  const consentChoice = localStorage.getItem('anvair_analytics_consent');
+
+  function loadAnalytics() {
+    gtag('consent', 'update', {
+      'analytics_storage': 'granted'
+    });
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(script);
+
+    gtag('config', GA_ID);
+  }
+
+  if (consentChoice === 'granted') {
+    loadAnalytics();
+  } else if (consentChoice !== 'denied') {
+    document.getElementById('analytics-consent').style.display = 'block';
+  }
+
+  document.getElementById('accept-analytics').addEventListener('click', function () {
+    localStorage.setItem('anvair_analytics_consent', 'granted');
+    document.getElementById('analytics-consent').style.display = 'none';
+    loadAnalytics();
+  });
+
+document.getElementById('decline-analytics').addEventListener('click', function () {
+  localStorage.setItem('anvair_analytics_consent', 'denied');
+
+  gtag('consent', 'update', {
+    'analytics_storage': 'denied'
+  });
+
+  document.getElementById('analytics-consent').style.display = 'none';
+});
+    document.getElementById('analytics-preferences').addEventListener('click', function (event) {
+  event.preventDefault();
+  document.getElementById('analytics-consent').style.display = 'block';
+});
+</script>
 </body>
 </html>
